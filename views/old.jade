@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  div
+    div(value=oldcat) You killed cat #{oldcat.name} who was #{oldcat.age} years old and had #{oldcat.colors} colors.

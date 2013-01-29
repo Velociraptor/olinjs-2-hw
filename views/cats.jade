@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  div
+    each cat, i in cats
+      div(value=cat) #{cat.name} is #{cat.age} years old and has #{cat.colors} colors.
